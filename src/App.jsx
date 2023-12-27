@@ -2,18 +2,20 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { products } from './mocks/products.json'
+import { products as initialProducts } from './mocks/products.json'
 import Products from './components/Products'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import { IS_DEVELOPMENT } from './config'
 
-function App() {
- 
-    const [filters, setFilters] = useState({
-      category: 'all',
-      minPrice: 0
-    })
-  
-  
+//Custom Hook
+function useFilters(){
+
+  const [filters, setFilters] = useState({
+    category: 'all',
+    minPrice: 0
+  })
+
   const filterProducts = (products) => {
     return products.filter(product => {
       return(
@@ -24,6 +26,12 @@ function App() {
       )
     })
    }
+   return { filters, filterProducts, setFilters}
+}
+
+function App() {
+ const [products] = useState(initialProducts)
+ const { filters, filterProducts, setFilters } = useFilters()
 
   const filteredProducts = filterProducts(products)
 
@@ -31,6 +39,7 @@ function App() {
     <>
     <Header changeFilters={setFilters}/>
     <Products products={filteredProducts}/>
+    {IS_DEVELOPMENT && <Footer filters={filters}/>}
     
     </>
   )
