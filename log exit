@@ -1,0 +1,23 @@
+[33mcommit ad0e995a8d924d9c587e37364622d46a8227845f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Rigoberto Chimalhua <webmaster25@outlook.es>
+Date:   Wed Dec 27 10:31:22 2023 -0600
+
+    Se agregó footer y el config production
+
+[33mcommit 15d0f086617fa6165b82dc6455b0ce73a191e6f8[m
+Author: Rigoberto Chimalhua <webmaster25@outlook.es>
+Date:   Sat Dec 23 11:38:26 2023 -0600
+
+    Backup antes de las custom Hooks
+
+[33mcommit f03138c8fa408c44ea595b6751fad9584d3b5487[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Rigoberto Chimalhua <webmaster25@outlook.es>
+Date:   Wed Dec 13 12:32:15 2023 -0600
+
+    renderizado y filtrado de productos
+
+[33mcommit e7088f750c47988a511d261508df6f250b6547b8[m
+Author: Rigoberto Chimalhua <webmaster25@outlook.es>
+Date:   Wed Dec 13 12:31:18 2023 -0600
+
+    Renderizado y filtrado de productos
